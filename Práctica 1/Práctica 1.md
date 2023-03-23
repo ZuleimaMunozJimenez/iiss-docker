@@ -3,4 +3,4 @@ En la realización de esta práctica he seguido los pasos aportados en la docume
 enunciado este es el enlace a la imagen personalizada que ha sido subida a mi usuario de docker:
 
 
-[link](https://hub.docker.com/repository/docker/zuleimamuji/apacheserver_p1/general)
+[Imagen Docker Personalizada](https://hub.docker.com/repository/docker/zuleimamuji/apacheserver_p1/general)
