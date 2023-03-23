@@ -53,7 +53,7 @@ Una vez creado, podemos decir que al haber usado el mismo volumen en la creació
 Tras hacer esto, podemos comprobar que efectivamente ambos contenedores tienen el mismo contenido.
 
 
-![Image](Parte1OK.png "Contenido de ambos contenedores")
+![Contenido de ambos contenedores](Parte1OK.png "Contenido de ambos contenedores")
 
 
 ## Parte 2
@@ -67,7 +67,7 @@ Comenzamos esta parte de la práctica creando la red y los dos contenedores soli
 Procedemos a abrir las terminales internas de los contenedores usando los comandos `docker exec -it Ubuntu1 /bin/bash` y `docker exec -it Ubuntu2 /bin/bash`  y consultamos la ip del contenedor _Ubuntu1_ y realizamos ping a este desde la terminal del contenedor _Ubuntu2_. Tras esto podemos comprobar que no funciona el ping, esto pasa porque el contenedor _Ubuntu2_ no está conectado a la red creada.
 
 
-![Image](Parte2_pregunta1.png "Ping de ambos contenedores y solo uno de ellos conectado a la red")
+![Ping de ambos contenedores y solo uno de ellos conectado a la red](Parte2_pregunta1.png "Ping de ambos contenedores y solo uno de ellos conectado a la red")
 
 
 Por eso, procedemos a conectar el contenedor _Ubuntu2_ a la red. Para hacer esto, eliminamos el contenedor existente usando `docker rm Ubuntu2` y creamos el contenedor de nuevo pero esta vez usando el comando:
@@ -79,4 +79,4 @@ Por eso, procedemos a conectar el contenedor _Ubuntu2_ a la red. Para hacer esto
 Una vez tenemos el contenedor creado de nuevo y conectado a la red, procedemos a realizar nuevamente los pasos para realizar un ping entre ambos contenedores. A diferencia del intento anterior, este ping se produce de forma exitosa, debido a que ambos contenedores están conectados a la misma red haciendo factible el ping.
 
 
-![Image](Parte2_pregunta2.png "Ping de los contenedores conectados a la red")
+![Ping de ambos contenedores conectados a la red](Parte2_pregunta2.png "Ping de ambos contenedores conectados a la red")
