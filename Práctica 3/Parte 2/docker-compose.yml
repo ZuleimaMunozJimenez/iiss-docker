@@ -1,0 +1,28 @@
+version: "3"
+
+services:
+
+ wordpress:
+   image: bitnami/wordpress:latest
+   container_name: wordpress_
+   environment:
+     - ALLOW_EMPTY_PASSWORD=yes
+     - WORDPRESS_DATABASE_USER=bn_wordpress
+     - WORDPRESS_DATABASE_NAME=bitnami_wordpress
+   ports:
+     - 82:8080
+   networks:
+     - redDockerC
+ 
+ mariadb:
+   image: bitnami/mariadb:latest
+   container_name: mariadb
+   environment:
+     - ALLOW_EMPTY_PASSWORD=yes
+     - MARIADB_USER=bn_wordpress
+     - MARIADB_DATABASE=bitnami_wordpress
+   networks:
+     - redDockerC
+
+networks:
+ redDockerC:
